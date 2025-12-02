@@ -1,0 +1,601 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2025-12-02T04:22:56.716Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5893168400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hooks.f()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify the no of links in the web page",
+        "description": "",
+        "id": "home-page;verify-the-no-of-links-in-the-web-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4998000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user in the home page",
+            "match": {
+              "location": "stepDefinition.tc1_homePage.the_user_in_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user launches the home page",
+            "match": {
+              "location": "stepDefinition.tc1_homePage.user_launches_the_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1883904000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user able to click automobile",
+            "match": {
+              "location": "stepDefinition.tc1_homePage.user_able_to_click_automobile()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@f1"
+          }
+        ]
+      }
+    ],
+    "name": "Home page",
+    "description": "",
+    "id": "home-page",
+    "keyword": "Feature",
+    "uri": "file:features/01_homepage.feature",
+    "tags": [
+      {
+        "name": "@f1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2025-12-02T04:23:04.711Z",
+        "line": 3,
+        "name": "User Enters Vehicle Data",
+        "description": "Background: the user in the autombile_vehicle page",
+        "id": "vehicle;user-enters-vehicle-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9013639600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters valid \"\u003cmake\u003e\"and valid \"\u003cengineperformance\u003e\" and valid \"\u003cdateofmanufacture\u003e\" and valid \"\u003cnumberofseats\u003e\" and valid \"\u003cfuel\u003e\" and valid \"\u003clistprice\u003e\" and \"\u003clicenseplatenumber\u003e\" and valid \"\u003cannualmileage\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cengineperformance\u003e\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"\u003cdateofmanufacture\u003e\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"\u003cnumberofseats\u003e\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"\u003cfuel\u003e\"",
+                  "offset": 128
+                },
+                {
+                  "val": "\"\u003clistprice\u003e\"",
+                  "offset": 147
+                },
+                {
+                  "val": "\"\u003clicenseplatenumber\u003e\"",
+                  "offset": 165
+                },
+                {
+                  "val": "\"\u003cannualmileage\u003e\"",
+                  "offset": 198
+                }
+              ],
+              "location": "stepDefinition.tc2_ValidVehicleData.user_enters_valid_make_and_valid_and_valid_and_valid_and_valid_and_valid_and_and_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175894200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user able to click next.",
+            "match": {
+              "location": "stepDefinition.tc2_ValidVehicleData.user_able_to_click_next()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-12-02T04:23:13.934Z",
+        "line": 10,
+        "name": "the user in the extent insurant data",
+        "description": "",
+        "id": "vehicle;the-user-in-the-extent-insurant-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8084915000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters valid \"\u003cfirstname\u003e\" and \"\u003clastname\u003e\"and \"\u003cdateofbirth\u003e\" and \"\u003ccountry\u003e\" and \"\u003czipcode\u003e\" and \"\u003coccupation\u003e\" and \"\u003chobbies\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cfirstname\u003e\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"\u003cdateofbirth\u003e\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"\u003ccountry\u003e\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"\u003czipcode\u003e\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"\u003coccupation\u003e\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"\u003chobbies\u003e\"",
+                  "offset": 123
+                }
+              ],
+              "location": "stepDefinition.tc3_ValidInsurantData.user_enters_valid_and_lastname_and_and_and_and_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3173420400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks the next page",
+            "match": {
+              "location": "stepDefinition.tc3_ValidInsurantData.user_clicks_the_next_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-12-02T04:23:25.224Z",
+        "line": 15,
+        "name": "the user in the product page",
+        "description": "",
+        "id": "vehicle;the-user-in-the-product-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6905943800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user enters valid \"\u003cstartdate\u003e\" and \"\u003cinsuranceSum\u003e\" and \"\u003cmentRating\u003e\" and \"\u003cdamage\u003e\" and \"\u003coption\u003e\" and \"\u003ccourtesy\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cstartdate\u003e\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"\u003cinsuranceSum\u003e\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"\u003cmentRating\u003e\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"\u003cdamage\u003e\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"\u003coption\u003e\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"\u003ccourtesy\u003e\"",
+                  "offset": 110
+                }
+              ],
+              "location": "stepDefinition.tc4_ValidProductData.the_user_enters_valid_and_and_and_and_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6146513300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user able to click the next page",
+            "match": {
+              "location": "stepDefinition.tc4_ValidProductData.user_able_to_click_the_next_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-12-02T04:23:38.297Z",
+        "line": 20,
+        "name": "the user in the select price option",
+        "description": "",
+        "id": "vehicle;the-user-in-the-select-price-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4110233800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user selects a price option",
+            "match": {
+              "location": "stepDefinition.tc5_SelectPriceOption.the_user_selects_a_price_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1144568300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user allowed to click the next page",
+            "match": {
+              "location": "stepDefinition.tc5_SelectPriceOption.the_user_allowed_to_click_the_next_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-12-02T04:23:43.576Z",
+        "line": 27,
+        "name": "the user in the send quote option",
+        "description": "",
+        "id": "vehicle;the-user-in-the-send-quote-option",
+        "after": [
+          {
+            "result": {
+              "duration": 268909200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6790554600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user enters valid send quote",
+            "match": {
+              "location": "stepDefinition.tc6_ValidSendQuote.the_user_enters_valid_send_quote()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12148218300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the user gets a confirmation mail",
+            "match": {
+              "location": "stepDefinition.tc6_ValidSendQuote.the_user_gets_a_confirmation_mail()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@f2"
+          }
+        ]
+      }
+    ],
+    "name": "Vehicle",
+    "description": "",
+    "id": "vehicle",
+    "keyword": "Feature",
+    "uri": "file:features/02_Vehicle.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "The user enters invalid data",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-12-02T04:24:02.811Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4884265100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hooks.in()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "the user enters invalid data in the vehicle page",
+        "description": "",
+        "id": "the-user-in-the-sample-app-page;the-user-enters-invalid-data-in-the-vehicle-page",
+        "after": [
+          {
+            "result": {
+              "duration": 212997700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hooks.closeInvalid()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12136290800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters invalid data in the vehicle data",
+            "match": {
+              "location": "stepDefinition.tc8_invalid_Bug_screenshot_data.the_user_enters_invalid_data_in_the_vehicle_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11119715700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user enters invalid data in the insurant data",
+            "match": {
+              "location": "stepDefinition.tc8_invalid_Bug_screenshot_data.the_user_enters_invalid_data_in_the_insurant_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7010555400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user enters invalid data in the product data",
+            "match": {
+              "location": "stepDefinition.tc8_invalid_Bug_screenshot_data.the_user_enters_invalid_data_in_the_product_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16172483600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user tries to go to price page",
+            "match": {
+              "location": "stepDefinition.tc8_invalid_Bug_screenshot_data.the_user_tries_to_go_to_price_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166256900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the system shows error",
+            "match": {
+              "location": "stepDefinition.tc8_invalid_Bug_screenshot_data.the_system_shows_error()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@f3"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "The user enters invalid data",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-12-02T04:24:54.549Z",
+        "before": [
+          {
+            "result": {
+              "duration": 35972039900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hooks.in()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "user enters the invalid data in vehicle page",
+        "description": "",
+        "id": "the-user-in-the-sample-app-page;user-enters-the-invalid-data-in-vehicle-page",
+        "after": [
+          {
+            "result": {
+              "duration": 224991100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.hooks.closeInvalid()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13212709500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enters invalid data in vehicle page",
+            "match": {
+              "location": "stepDefinition.tc7_invalid_data.user_enters_invalid_data_in_vehicle_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11162900200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters invalid data in insurant page",
+            "match": {
+              "location": "stepDefinition.tc7_invalid_data.user_enters_invalid_data_in_insurant_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6759789300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters invalid data in product page",
+            "match": {
+              "location": "stepDefinition.tc7_invalid_data.user_enters_invalid_data_in_product_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11213617700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user can go to the price page",
+            "match": {
+              "location": "stepDefinition.tc7_invalid_data.user_can_go_to_the_price_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46992900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "system shows the error page",
+            "match": {
+              "location": "stepDefinition.tc7_invalid_data.system_shows_the_error_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@f3"
+          }
+        ]
+      }
+    ],
+    "name": "The user in the sample app page",
+    "description": "",
+    "id": "the-user-in-the-sample-app-page",
+    "keyword": "Feature",
+    "uri": "file:features/03_invalid.feature",
+    "tags": [
+      {
+        "name": "@f3",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

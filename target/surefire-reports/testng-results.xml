@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-02T09:52:55 IST" name="Suite" finished-at="2025-12-02T09:56:13 IST" duration-ms="197401">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-12-02T09:52:55 IST" name="Test1" finished-at="2025-12-02T09:56:13 IST" duration-ms="197353">
+      <class name="testRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:52:55 IST" name="setUpClass" finished-at="2025-12-02T09:52:56 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:52:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:53:04 IST" duration-ms="8256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the no of links in the web page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Home page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:53:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:53:13 IST" duration-ms="9230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Enters Vehicle Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Vehicle]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:53:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:53:25 IST" duration-ms="11286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["the user in the extent insurant data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Vehicle]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:53:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:53:38 IST" duration-ms="13078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["the user in the product page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Vehicle]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:53:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:53:43 IST" duration-ms="5272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["the user in the select price option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Vehicle]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:53:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:54:02 IST" duration-ms="19227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["the user in the send quote option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Vehicle]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:54:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:54:54 IST" duration-ms="51747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["the user enters invalid data in the vehicle page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[The user in the sample app page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:54:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-02T09:56:13 IST" duration-ms="78615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user enters the invalid data in vehicle page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[The user in the sample app page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner@d6e7bab]" started-at="2025-12-02T09:56:13 IST" name="tearDownClass" finished-at="2025-12-02T09:56:13 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-12-02T09:56:13 IST" name="Test2" finished-at="2025-12-02T09:56:13 IST" duration-ms="0">
+      <class name="utilities.reportGenerator">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:utilities.reportGenerator@69e1dd28]" started-at="2025-12-02T09:52:55 IST" name="beforeSuite" finished-at="2025-12-02T09:52:55 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:utilities.reportGenerator@69e1dd28]" started-at="2025-12-02T09:56:13 IST" name="afterSuite" finished-at="2025-12-02T09:56:13 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- utilities.reportGenerator -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

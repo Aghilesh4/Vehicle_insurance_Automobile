@@ -1,0 +1,160 @@
+package stepDefinition;
+
+import static org.testng.Assert.assertTrue;
+
+import java.io.IOException;
+import java.util.NoSuchElementException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+
+import com.relevantcodes.extentreports.LogStatus;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
+import pageObjects.Vehicle;
+import pageObjects.homePage;
+import utilities.reportGenerator;
+import utilities.screenShot;
+
+public class tc8_invalid_Bug_screenshot_data extends reportGenerator 
+{
+	homePage home = new homePage(hooks.driver);
+	Vehicle ve = new Vehicle(hooks.driver);
+	
+	@When("the user enters invalid data in the vehicle data")
+	public void the_user_enters_invalid_data_in_the_vehicle_data() throws InterruptedException 
+	{
+		System.out.println("User in the automobile page");
+		home.clickCars();
+	
+		Thread.sleep(1000);
+	
+		Select o = new Select(hooks.driver.findElement(By.id("make")));
+		o.selectByVisibleText("Audi");
+		Thread.sleep(1000);
+		
+		hooks.driver.findElement(By.id("engineperformance")).sendKeys("123");
+		Thread.sleep(1000);
+
+		hooks.driver.findElement(By.id("dateofmanufacture")).sendKeys("12/12/2020");
+		Thread.sleep(1000);
+
+		hooks.driver.findElement(By.id("numberofseats")).sendKeys("4");
+		Thread.sleep(1000);
+
+		hooks.driver.findElement(By.id("fuel")).sendKeys("Diesel");
+		Thread.sleep(1000);
+		
+		hooks.driver.findElement(By.id("listprice")).sendKeys("35000");
+		Thread.sleep(1000);
+		
+		hooks.driver.findElement(By.id("licenseplatenumber")).sendKeys("@#%^^");
+		Thread.sleep(1000);
+
+		hooks.driver.findElement(By.id("annualmileage")).sendKeys("312");
+		Thread.sleep(1000);
+
+		
+		ve.nextInsurant();
+	}
+	
+	@When("the user enters invalid data in the insurant data")
+	public void the_user_enters_invalid_data_in_the_insurant_data() throws InterruptedException 
+	{
+		 System.out.println("The user in the Insurant Data page"); 
+	     
+		    hooks.driver.findElement(By.id("firstname")).sendKeys("aghhh");
+		    Thread.sleep(1000);
+		 	
+		    hooks.driver.findElement(By.id("lastname")).sendKeys("lsksk");
+		 	Thread.sleep(1000);
+		 	
+		 	hooks.driver.findElement(By.id("birthdate")).sendKeys("08/05/2005");
+		 	Thread.sleep(1000);
+
+	
+		 	Select selectcountry=new Select(hooks.driver.findElement(By.id("country")));
+		 	selectcountry.selectByVisibleText("India");	
+		 	Thread.sleep(1000);
+	
+		 	hooks.driver.findElement(By.id("zipcode")).sendKeys("0000");
+		 	Thread.sleep(1000);
+
+		 	Select selectjob=new Select(hooks.driver.findElement(By.id("occupation")));
+		 	selectjob.selectByVisibleText("Employee");
+		 	Thread.sleep(1000);
+
+		 	hooks.driver.findElement(By.xpath("//label[contains(.,'Speeding')]")).click();
+		 	Thread.sleep(1000);
+	
+
+			ve.nextProduct();
+	}
+	
+	@When("the user enters invalid data in the product data")
+	public void the_user_enters_invalid_data_in_the_product_data() throws InterruptedException 
+	{
+	System.out.println("The user in the Product Data page");
+		
+		hooks.driver.findElement(By.id("startdate")).sendKeys("6/6/2026");
+		Thread.sleep(1000);
+
+		Select selectinsurance=new Select(hooks.driver.findElement(By.id("insurancesum")));
+		selectinsurance.selectByVisibleText("7.000.000,00");	
+		Thread.sleep(1000);
+	
+		Select selectdamage=new Select(hooks.driver.findElement(By.id("damageinsurance")));
+		selectdamage.selectByVisibleText("Partial Coverage");
+		Thread.sleep(1000);
+	
+		Select selectmerit = new Select(hooks.driver.findElement(By.id("meritrating")));
+		selectmerit.selectByVisibleText("Bonus 1");
+		Thread.sleep(1000);
+	
+		hooks.driver.findElement(By.xpath("//*[@id=\"insurance-form\"]/div/section[3]/div[5]/p/label[2]")).click();
+		Thread.sleep(1000);
+
+		hooks.driver.findElement(By.id("courtesycar")).sendKeys("No");
+		Thread.sleep(1000);
+		
+	}
+	
+	@When("the user tries to go to price page")
+	public void the_user_tries_to_go_to_price_page() throws InterruptedException 
+	{
+		ve.nextPrice();
+		Thread.sleep(10000);
+	}
+	
+	@Then("the system shows error")
+	public void the_system_shows_error() throws IOException 
+	{
+		test=extent.startTest("Test8_negative");
+	try 
+	{
+	String wor=hooks.driver.findElement(By.xpath("//*[@id=\"xLoaderPrice\"]/p")).getText();
+	boolean val= ve.verifyPage(wor,"Please, complete the first three steps to see the price table.");
+	
+		assertTrue(val);
+		test.log(LogStatus.PASS, "test case 8_negative verified");	
+		Allure.step("Passed");
+	}
+	catch (NoSuchElementException e) 
+	{
+	    test.log(LogStatus.FAIL, "Element not found, test case 8_negative failed");
+	    Allure.addAttachment("Failed",e.getMessage());
+	    screenShot.sShot(hooks.driver);
+	}
+	catch(AssertionError e)
+	{
+		screenShot.sShot(hooks.driver);
+		test.log(LogStatus.FAIL, "test case 8_negative failed");
+		Allure.addAttachment("Failed",e.getMessage());
+	}
+	}
+}
+
+
+

@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 25 18:06:31 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (525 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the no of links in the web page", "Home page"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.hdriver&quot; is null
+	at pageObjects.homePage.clickCars(homePage.java:18)
+	at stepDefinition.tc1_homePage.user_able_to_click_automobile(tc1_homePage.java:34)
+	at ✽.user able to click automobile(file:///C:/Selenium%20DEmo/Demo_Capstone/features/homepage.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1271041075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1271041075'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.hdriver&quot; is null
+	at pageObjects.homePage.clickCars(homePage.java:18)
+	at stepDefinition.tc1_homePage.user_able_to_click_automobile(tc1_homePage.java:34)
+	at ✽.user able to click automobile(file:///C:/Selenium%20DEmo/Demo_Capstone/features/homepage.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>testRunner@2de23121</td></tr>
+<tr>
+<td title='testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Enters Vehicle Data", "Vehicle"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.tvdriver&quot; is null
+	at stepDefinition.tc2_ValidVehicleData.user_enters_valid_make_and_valid_and_valid_and_valid_and_valid_and_valid_and_and_valid(tc2_ValidVehicleData.java:35)
+	at ✽.user enters valid &quot;&lt;make&gt;&quot;and valid &quot;&lt;engineperformance&gt;&quot; and valid &quot;&lt;dateofmanufacture&gt;&quot; and valid &quot;&lt;numberofseats&gt;&quot; and valid &quot;&lt;fuel&gt;&quot; and valid &quot;&lt;listprice&gt;&quot; and &quot;&lt;licenseplatenumber&gt;&quot; and valid &quot;&lt;annualmileage&gt;&quot;(file:///C:/Selenium%20DEmo/Demo_Capstone/features/vehicle.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1078262677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1078262677'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.tvdriver&quot; is null
+	at stepDefinition.tc2_ValidVehicleData.user_enters_valid_make_and_valid_and_valid_and_valid_and_valid_and_valid_and_and_valid(tc2_ValidVehicleData.java:35)
+	at ✽.user enters valid &quot;&lt;make&gt;&quot;and valid &quot;&lt;engineperformance&gt;&quot; and valid &quot;&lt;dateofmanufacture&gt;&quot; and valid &quot;&lt;numberofseats&gt;&quot; and valid &quot;&lt;fuel&gt;&quot; and valid &quot;&lt;listprice&gt;&quot; and &quot;&lt;licenseplatenumber&gt;&quot; and valid &quot;&lt;annualmileage&gt;&quot;(file:///C:/Selenium%20DEmo/Demo_Capstone/features/vehicle.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>testRunner@2de23121</td></tr>
+<tr>
+<td title='testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "show validation errors when user enters invalid data", "Vehicle"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.bdriver&quot; is null
+	at stepDefinition.tc3_blankVehicleData.user_enters_leaves_all_required_fields_empty(tc3_blankVehicleData.java:29)
+	at ✽.user enters leaves all required fields empty;(file:///C:/Selenium%20DEmo/Demo_Capstone/features/vehicle.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace57624756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace57624756'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.bdriver&quot; is null
+	at stepDefinition.tc3_blankVehicleData.user_enters_leaves_all_required_fields_empty(tc3_blankVehicleData.java:29)
+	at ✽.user enters leaves all required fields empty;(file:///C:/Selenium%20DEmo/Demo_Capstone/features/vehicle.feature:13)
+</pre></div></td>
+<td>0</td>
+<td>testRunner@2de23121</td></tr>
+</table><p>
+</body>
+</html>
